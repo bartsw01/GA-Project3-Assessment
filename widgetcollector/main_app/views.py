@@ -14,3 +14,8 @@ class WidgetCreate(CreateView):
   model = Widget
   fields = '__all__'
   success_url = '/'  
+
+
+class WidgetDelete(DeleteView):
+  model = Widget
+  success_url = '/'  
